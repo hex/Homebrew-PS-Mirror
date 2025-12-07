@@ -4,11 +4,11 @@
 class PsMirrorServer < Formula
   desc "WebSocket relay server for PS Mirror - Photoshop to iOS preview"
   homepage "https://github.com/hex/PS-Mirror"
-  url "https://github.com/hex/PS-Mirror/archive/refs/heads/main.tar.gz"
+  # Private repo - use git clone with SSH
+  url "git@github.com:hex/PS-Mirror.git", using: :git, branch: "main"
   version "2025.12.6"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license "MIT"
-  head "https://github.com/hex/PS-Mirror.git", branch: "main"
+  head "git@github.com:hex/PS-Mirror.git", branch: "main"
 
   depends_on "oven-sh/bun/bun"
 
