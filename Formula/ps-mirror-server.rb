@@ -4,17 +4,15 @@
 class PsMirrorServer < Formula
   desc "WebSocket relay server for PS Mirror - Photoshop to iOS preview"
   homepage "https://github.com/hex/PS-Mirror"
-  # Private repo - use git clone with SSH
-  url "git@github.com:hex/PS-Mirror.git", using: :git, branch: "main"
-  version "2025.12.6"
+  url "https://github.com/hex/ps-mirror-server/releases/download/v2025.12.6/ps-mirror-server-2025.12.6.tar.gz"
+  sha256 "PLACEHOLDER"
   license "MIT"
-  head "git@github.com:hex/PS-Mirror.git", branch: "main"
 
   depends_on "oven-sh/bun/bun"
 
   def install
     # Install server files to libexec
-    libexec.install Dir["server/*"]
+    libexec.install Dir["*"]
 
     # Install dependencies
     cd libexec do
