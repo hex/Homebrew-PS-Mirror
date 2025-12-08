@@ -4,8 +4,8 @@
 class PsMirrorServer < Formula
   desc "WebSocket relay server for PS Mirror - Photoshop to iOS preview"
   homepage "https://github.com/hex/PS-Mirror"
-  url "https://github.com/hex/ps-mirror-server/releases/download/v2025.12.29/ps-mirror-server-2025.12.29.tar.gz"
-  sha256 "de0942088a9a68e889730b76c91790fb4ce4511c605e81f94be8fecd777106ab"
+  url "https://github.com/hex/ps-mirror-server/releases/download/v2025.12.30/ps-mirror-server-2025.12.30.tar.gz"
+  sha256 "0900980773080ede0d3513df5a852fc337d9c9d354476e07995c6d7da1b7465c"
   license "MIT"
 
   depends_on "oven-sh/bun/bun"
