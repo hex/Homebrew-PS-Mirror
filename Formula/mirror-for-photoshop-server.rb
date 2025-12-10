@@ -8,6 +8,11 @@ class MirrorForPhotoshopServer < Formula
   sha256 "29b9d485216bdef3cb4201c96200386767e0dbfab23daf1a2810f326af1de504"
   license "MIT"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "oven-sh/bun/bun"
 
   def install
@@ -27,6 +32,18 @@ class MirrorForPhotoshopServer < Formula
 
     # Short alias
     bin.install_symlink "mirror-for-photoshop-server" => "mirrorps"
+  end
+
+  def caveats
+    <<~EOS
+      Short alias available: mirrorps
+
+      To start as a background service:
+        brew services start mirror-for-photoshop-server
+
+      Default port: 8765
+      Custom port:  mirrorps --port 9000
+    EOS
   end
 
   service do
