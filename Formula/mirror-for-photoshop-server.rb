@@ -24,6 +24,9 @@ class MirrorForPhotoshopServer < Formula
       #!/bin/bash
       exec "#{Formula["oven-sh/bun/bun"].opt_bin}/bun" "#{libexec}/server.js" "$@"
     EOS
+
+    # Short alias
+    bin.install_symlink "mirror-for-photoshop-server" => "mirrorps"
   end
 
   service do

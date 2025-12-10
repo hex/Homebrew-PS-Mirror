@@ -14,11 +14,13 @@ brew install mirror-for-photoshop-server
 Run in foreground:
 ```bash
 mirror-for-photoshop-server
+# or use the short alias:
+mirrorps
 ```
 
 Run on custom port:
 ```bash
-mirror-for-photoshop-server --port 9000
+mirrorps --port 9000
 ```
 
 Run as background service:
