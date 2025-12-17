@@ -4,8 +4,8 @@
 class MirrorForPhotoshopServer < Formula
   desc "WebSocket relay server for Mirror for Photoshop - Photoshop to iOS preview"
   homepage "https://github.com/hex/Mirror-for-Photoshop"
-  url "https://github.com/hex/mirror-for-photoshop-server/releases/download/v2025.12.50/mirror-for-photoshop-server.tar.gz"
-  sha256 "ea170f5988267420abf2087e9fdb12a9915ef87307f260af5b16f1e3d7cfca0f"
+  url "https://github.com/hex/mirror-for-photoshop-server/releases/download/v2025.12.51/mirror-for-photoshop-server.tar.gz"
+  sha256 "5d0512bf6cee5d4ba68639036daa08ef4c6b78664edd461e15872c093ed69817"
   license "MIT"
 
   livecheck do
